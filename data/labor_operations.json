@@ -1,0 +1,156 @@
+{
+  "description": "Labor market conditions and operational factors for data center siting. Based on BLS employment data and DC industry estimates. Data center operations require specialized technicians, and labor availability affects both operating cost and capacity to scale.",
+  "metrics_explained": {
+    "estimated_dc_workforce": "Approximate number of data center-related technical workers in the metro (technicians, engineers, operations).",
+    "construction_labor_cost_index": "Index of construction labor costs. 100=US average. Higher means more expensive.",
+    "nearest_major_airport_miles": "Distance in miles to nearest major commercial airport (for equipment receipt and technician travel).",
+    "labor_availability_score": "Overall labor availability. 1=excellent (abundant skilled workforce), 5=poor (shortage).",
+    "avg_technician_salary_usd": "Approximate median annual salary for DC technicians in the metro."
+  },
+  "markets": {
+    "Northern Virginia": {
+      "estimated_dc_workforce": 18000,
+      "construction_labor_cost_index": 118,
+      "nearest_major_airport_miles": 25,
+      "labor_availability_score": 3,
+      "avg_technician_salary_usd": 95000,
+      "notes": "Largest DC workforce in world. Experienced, but competitive hiring market."
+    },
+    "Dallas-Fort Worth": {
+      "estimated_dc_workforce": 7500,
+      "construction_labor_cost_index": 95,
+      "nearest_major_airport_miles": 15,
+      "labor_availability_score": 2,
+      "avg_technician_salary_usd": 78000,
+      "notes": "Growing technical workforce. DFW airport is major logistics hub."
+    },
+    "Silicon Valley": {
+      "estimated_dc_workforce": 4200,
+      "construction_labor_cost_index": 142,
+      "nearest_major_airport_miles": 12,
+      "labor_availability_score": 4,
+      "avg_technician_salary_usd": 118000,
+      "notes": "Highest cost labor market. Strong technical base but extreme competition from tech employers."
+    },
+    "Phoenix": {
+      "estimated_dc_workforce": 5800,
+      "construction_labor_cost_index": 98,
+      "nearest_major_airport_miles": 18,
+      "labor_availability_score": 2,
+      "avg_technician_salary_usd": 75000,
+      "notes": "Growing rapidly. ASU produces technical grads. Desert logistics challenges."
+    },
+    "Chicago": {
+      "estimated_dc_workforce": 4800,
+      "construction_labor_cost_index": 108,
+      "nearest_major_airport_miles": 20,
+      "labor_availability_score": 2,
+      "avg_technician_salary_usd": 82000,
+      "notes": "Strong industrial labor base. O'Hare is major logistics hub."
+    },
+    "Atlanta": {
+      "estimated_dc_workforce": 4500,
+      "construction_labor_cost_index": 92,
+      "nearest_major_airport_miles": 22,
+      "labor_availability_score": 2,
+      "avg_technician_salary_usd": 72000,
+      "notes": "World's busiest airport (ATL). Technical workforce growing fast."
+    },
+    "New York/New Jersey": {
+      "estimated_dc_workforce": 3800,
+      "construction_labor_cost_index": 132,
+      "nearest_major_airport_miles": 15,
+      "labor_availability_score": 3,
+      "avg_technician_salary_usd": 98000,
+      "notes": "High cost but deep financial services tech labor pool."
+    },
+    "Columbus": {
+      "estimated_dc_workforce": 2800,
+      "construction_labor_cost_index": 92,
+      "nearest_major_airport_miles": 18,
+      "labor_availability_score": 2,
+      "avg_technician_salary_usd": 68000,
+      "notes": "Intel investment driving technical workforce growth. OSU graduates."
+    },
+    "Hillsboro-Portland": {
+      "estimated_dc_workforce": 2900,
+      "construction_labor_cost_index": 105,
+      "nearest_major_airport_miles": 15,
+      "labor_availability_score": 3,
+      "avg_technician_salary_usd": 82000,
+      "notes": "Intel and tech cluster provides workforce. Prineville is remote."
+    },
+    "Reno-Sparks": {
+      "estimated_dc_workforce": 1500,
+      "construction_labor_cost_index": 98,
+      "nearest_major_airport_miles": 12,
+      "labor_availability_score": 3,
+      "avg_technician_salary_usd": 72000,
+      "notes": "Tesla Gigafactory anchor. Growing but thin workforce."
+    },
+    "Salt Lake City": {
+      "estimated_dc_workforce": 1800,
+      "construction_labor_cost_index": 94,
+      "nearest_major_airport_miles": 10,
+      "labor_availability_score": 2,
+      "avg_technician_salary_usd": 74000,
+      "notes": "University of Utah technical grads. Lehi tech corridor."
+    },
+    "Minneapolis-St. Paul": {
+      "estimated_dc_workforce": 1600,
+      "construction_labor_cost_index": 105,
+      "nearest_major_airport_miles": 16,
+      "labor_availability_score": 3,
+      "avg_technician_salary_usd": 80000,
+      "notes": "Fortune 500 enterprise base provides technical workforce."
+    },
+    "Austin-San Antonio": {
+      "estimated_dc_workforce": 2400,
+      "construction_labor_cost_index": 96,
+      "nearest_major_airport_miles": 14,
+      "labor_availability_score": 2,
+      "avg_technician_salary_usd": 78000,
+      "notes": "Tech migration and UT Austin provide strong pipeline."
+    },
+    "Kansas City": {
+      "estimated_dc_workforce": 1200,
+      "construction_labor_cost_index": 88,
+      "nearest_major_airport_miles": 20,
+      "labor_availability_score": 3,
+      "avg_technician_salary_usd": 66000,
+      "notes": "Lower labor costs but thinner specialized workforce."
+    },
+    "Nashville": {
+      "estimated_dc_workforce": 1400,
+      "construction_labor_cost_index": 92,
+      "nearest_major_airport_miles": 12,
+      "labor_availability_score": 3,
+      "avg_technician_salary_usd": 68000,
+      "notes": "Growing tech corridor. Vanderbilt and Nashville State pipelines."
+    },
+    "Denver": {
+      "estimated_dc_workforce": 2000,
+      "construction_labor_cost_index": 102,
+      "nearest_major_airport_miles": 22,
+      "labor_availability_score": 2,
+      "avg_technician_salary_usd": 80000,
+      "notes": "DIA is major hub. Strong tech/aerospace workforce."
+    },
+    "Richmond": {
+      "estimated_dc_workforce": 1500,
+      "construction_labor_cost_index": 95,
+      "nearest_major_airport_miles": 10,
+      "labor_availability_score": 3,
+      "avg_technician_salary_usd": 75000,
+      "notes": "Draws from NoVA labor pool. Growing as overflow market."
+    }
+  },
+  "default_for_non_market": {
+    "estimated_dc_workforce": 500,
+    "construction_labor_cost_index": 90,
+    "nearest_major_airport_miles": 35,
+    "labor_availability_score": 4,
+    "avg_technician_salary_usd": 65000,
+    "notes": "Non-DC market. Specialized DC workforce likely limited; requires relocation and training."
+  }
+}

@@ -1,65 +1,136 @@
-import Image from "next/image";
+// app/page.js
+'use client';
+
+import { useState } from 'react';
+import AddressInput from './components/AddressInput';
+import ScoreCard from './components/ScoreCard';
+import SiteMap from './components/SiteMap';
+import AxisBars from './components/AxisBars';
+import MemoPanel from './components/MemoPanel';
 
 export default function Home() {
+  const [loading, setLoading] = useState(false);
+  const [result, setResult] = useState(null);
+  const [error, setError] = useState(null);
+
+  const handleScreen = async (address) => {
+    setLoading(true);
+    setError(null);
+    setResult(null);
+    try {
+      const res = await fetch('/api/screen', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ address }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Screening failed.');
+      setResult(data);
+    } catch (e) {
+      setError(e.message);
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.js file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <>
+      <header className="border-b border-[var(--border)]">
+        <div className="max-w-7xl mx-auto px-8 py-6 flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <div className="w-2.5 h-2.5 rounded-full bg-[var(--accent)] animate-pulse-dim" />
+            <div className="font-mono text-xs tracking-[0.3em] uppercase text-[var(--text-dim)]">
+              DC · Site · Intelligence
+            </div>
+          </div>
+          <div className="font-mono text-[10px] tracking-widest uppercase text-[var(--text-faint)] hidden sm:block">
+            Columbia MSRED / AI × Real Estate
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+      </header>
+
+      <main className="max-w-7xl mx-auto px-8 pt-20 pb-24">
+        <section className="animate-fadeup">
+          <div className="max-w-4xl">
+            <div className="font-mono text-[11px] tracking-[0.25em] uppercase text-[var(--accent)] mb-6">
+              Eleven-Axis Screening · Claude-Generated Memo
+            </div>
+            <h1
+              className="font-serif tracking-tight text-[var(--text)]"
+              style={{
+                fontSize: 'clamp(3rem, 7vw, 5.5rem)',
+                lineHeight: 1.05,
+                fontWeight: 500,
+                fontVariationSettings: '"opsz" 144, "SOFT" 50',
+              }}
+            >
+              Underwrite any<br />
+              <span className="italic text-[var(--text-dim)]">US data center site.</span>
+            </h1>
+            <p className="mt-8 text-lg text-[var(--text-dim)] max-w-2xl leading-relaxed">
+              Enter any US address. The engine geolocates, identifies the nearest market, scores eleven siting axes from power proximity to regulatory risk, and writes an institutional investment memo.
+            </p>
+          </div>
+        </section>
+
+        <section className="mt-14 animate-fadeup" style={{ animationDelay: '0.15s' }}>
+          <AddressInput onSubmit={handleScreen} loading={loading} />
+        </section>
+
+        {loading && (
+          <section className="mt-24 text-center animate-fadeup">
+            <div className="inline-flex items-center gap-3 font-mono text-xs tracking-widest uppercase text-[var(--text-dim)]">
+              <span className="w-2 h-2 rounded-full bg-[var(--accent)] animate-pulse-dim" />
+              Geocoding → Scoring 11 axes → Drafting memo
+            </div>
+            <div className="mt-4 text-sm text-[var(--text-faint)]">
+              Claude is writing a 400-word institutional memo. 20-40 seconds.
+            </div>
+          </section>
+        )}
+
+        {error && !loading && (
+          <section className="mt-14 max-w-2xl animate-fadeup">
+            <div className="border border-[var(--bad)] bg-[var(--bad)]/5 rounded-lg p-5">
+              <div className="font-mono text-[10px] tracking-widest uppercase text-[var(--bad)] mb-2">
+                Screening failed
+              </div>
+              <div className="text-sm text-[var(--text)]">{error}</div>
+              <div className="mt-3 text-xs text-[var(--text-faint)]">
+                Try a simpler form like &ldquo;Ashburn, VA&rdquo; or &ldquo;Chandler, AZ&rdquo;.
+              </div>
+            </div>
+          </section>
+        )}
+
+        {result && !loading && (
+          <section className="mt-20 space-y-8">
+            <div className="animate-fadeup">
+              <ScoreCard result={result} />
+            </div>
+            <div className="animate-fadeup" style={{ animationDelay: '0.08s' }}>
+              <SiteMap result={result} />
+            </div>
+            <div className="animate-fadeup" style={{ animationDelay: '0.16s' }}>
+              <AxisBars axes={result.scoring.axes} weights={result.scoring.weights} />
+            </div>
+            <div className="animate-fadeup" style={{ animationDelay: '0.24s' }}>
+              <MemoPanel memo={result.memo} memoError={result.memoError} />
+            </div>
+          </section>
+        )}
       </main>
-    </div>
+
+      <footer className="border-t border-[var(--border)]">
+        <div className="max-w-7xl mx-auto px-8 py-8 flex items-center justify-between flex-wrap gap-4">
+          <div className="font-mono text-[10px] tracking-widest uppercase text-[var(--text-faint)]">
+            Data is illustrative · Not a substitute for utility interconnection studies
+          </div>
+          <div className="font-mono text-[10px] tracking-widest uppercase text-[var(--text-faint)]">
+            Built with Claude · Deployed on Vercel
+          </div>
+        </div>
+      </footer>
+    </>
   );
 }

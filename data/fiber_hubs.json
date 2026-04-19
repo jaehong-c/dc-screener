@@ -1,0 +1,25 @@
+{
+  "description": "Major US long-haul fiber hubs and peering exchange points. Based on publicly documented Internet Exchange locations (Equinix IX, DE-CIX, Cologix) and Tier-1 carrier POPs. Proximity to these hubs is a proxy for low-latency peering access, critical for both hyperscaler edge deployments and colocation offerings.",
+  "fiber_hubs": [
+    {"city": "Ashburn", "state": "VA", "lat": 39.0438, "lng": -77.4874, "tier": 1, "carriers": ["Equinix IBX", "Digital Realty MAE-East", "CoreSite"], "description": "Largest Internet peering hub in the world. ~70% of global internet traffic touches Ashburn."},
+    {"city": "New York", "state": "NY", "lat": 40.7128, "lng": -74.0060, "tier": 1, "carriers": ["Equinix NY", "DE-CIX NY", "60 Hudson"], "description": "Major transatlantic cable landing point and financial services hub."},
+    {"city": "Secaucus", "state": "NJ", "lat": 40.7895, "lng": -74.0565, "tier": 1, "carriers": ["NJR Meet Me Room", "Equinix NY2"], "description": "Primary NJ peering hub serving NYC metro."},
+    {"city": "Chicago", "state": "IL", "lat": 41.8781, "lng": -87.6298, "tier": 1, "carriers": ["Equinix CH", "350 E Cermak"], "description": "Central US interconnection hub. 350 E Cermak is one of world's largest carrier hotels."},
+    {"city": "Dallas", "state": "TX", "lat": 32.7767, "lng": -96.7970, "tier": 1, "carriers": ["Equinix DA", "Infomart Dallas", "Digital Realty"], "description": "Major Southern US interconnection point. Infomart is anchor carrier hotel."},
+    {"city": "Los Angeles", "state": "CA", "lat": 34.0522, "lng": -118.2437, "tier": 1, "carriers": ["Equinix LA", "One Wilshire"], "description": "Pacific cable landing hub. One Wilshire serves Asia-Pacific traffic."},
+    {"city": "San Jose", "state": "CA", "lat": 37.3382, "lng": -121.8863, "tier": 1, "carriers": ["Equinix SV", "Digital Realty"], "description": "Silicon Valley interconnection hub. Critical for West Coast peering."},
+    {"city": "Seattle", "state": "WA", "lat": 47.6062, "lng": -122.3321, "tier": 1, "carriers": ["Equinix SE", "Westin Building"], "description": "Pacific Northwest hub. Trans-Pacific cable landing and Amazon Web Services anchor."},
+    {"city": "Atlanta", "state": "GA", "lat": 33.7490, "lng": -84.3880, "tier": 1, "carriers": ["Equinix AT", "56 Marietta"], "description": "Southeastern US peering hub."},
+    {"city": "Miami", "state": "FL", "lat": 25.7617, "lng": -80.1918, "tier": 1, "carriers": ["Equinix MI", "NAP of the Americas"], "description": "Latin America and Caribbean gateway. Multiple submarine cable landings."},
+
+    {"city": "Phoenix", "state": "AZ", "lat": 33.4484, "lng": -112.0740, "tier": 2, "carriers": ["PhoenixNAP", "Digital Realty"], "description": "Growing Southwest hub. Alternative to Los Angeles for latency."},
+    {"city": "Denver", "state": "CO", "lat": 39.7392, "lng": -104.9903, "tier": 2, "carriers": ["Equinix DE", "CoreSite"], "description": "Mountain region interconnection point."},
+    {"city": "Minneapolis", "state": "MN", "lat": 44.9778, "lng": -93.2650, "tier": 2, "carriers": ["511 Building", "Cologix"], "description": "Upper Midwest hub."},
+    {"city": "Houston", "state": "TX", "lat": 29.7604, "lng": -95.3698, "tier": 2, "carriers": ["Skybox Houston", "Data Foundry"], "description": "Gulf Coast interconnection. Submarine cable landings."},
+    {"city": "Portland", "state": "OR", "lat": 45.5152, "lng": -122.6784, "tier": 2, "carriers": ["Pittock Building", "Flexential"], "description": "Pacific Northwest secondary hub."},
+    {"city": "Columbus", "state": "OH", "lat": 39.9612, "lng": -82.9988, "tier": 2, "carriers": ["Cologix COL", "Expedient"], "description": "Growing Midwest hub, near hyperscaler clusters."},
+    {"city": "Nashville", "state": "TN", "lat": 36.1627, "lng": -86.7816, "tier": 2, "carriers": ["Digital Realty Nashville"], "description": "Regional Southeast hub."},
+    {"city": "Salt Lake City", "state": "UT", "lat": 40.7608, "lng": -111.8910, "tier": 2, "carriers": ["Aligned SLC", "C7 Data Centers"], "description": "Mountain West alternative hub."},
+    {"city": "Kansas City", "state": "MO", "lat": 39.0997, "lng": -94.5786, "tier": 2, "carriers": ["1102 Grand Boulevard"], "description": "Central US regional interconnection."}
+  ]
+}

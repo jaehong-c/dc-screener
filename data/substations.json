@@ -1,0 +1,68 @@
+{
+  "description": "Representative high-voltage transmission substations (>230kV) near major US data center clusters. Based on HIFLD Electric Substations dataset structure. Capacity values are illustrative estimates for screening purposes; actual available capacity requires utility interconnection study. Not to be used for final siting decisions.",
+  "substations": [
+    {"id": "VA001", "name": "Ashburn Substation", "lat": 39.0352, "lng": -77.4902, "voltage_kv": 500, "est_available_mw": 0, "utility": "Dominion Energy", "status": "constrained"},
+    {"id": "VA002", "name": "Brambleton Substation", "lat": 38.9998, "lng": -77.5335, "voltage_kv": 230, "est_available_mw": 0, "utility": "Dominion Energy", "status": "constrained"},
+    {"id": "VA003", "name": "Leesburg Substation", "lat": 39.1157, "lng": -77.5636, "voltage_kv": 230, "est_available_mw": 30, "utility": "Dominion Energy", "status": "limited"},
+    {"id": "VA004", "name": "Manassas Substation", "lat": 38.7509, "lng": -77.4753, "voltage_kv": 230, "est_available_mw": 80, "utility": "Dominion Energy", "status": "available"},
+    {"id": "VA005", "name": "Gainesville Substation", "lat": 38.7959, "lng": -77.6150, "voltage_kv": 230, "est_available_mw": 120, "utility": "Dominion Energy", "status": "available"},
+    {"id": "VA006", "name": "Warrenton Substation", "lat": 38.7134, "lng": -77.7952, "voltage_kv": 500, "est_available_mw": 250, "utility": "Dominion Energy", "status": "available"},
+    {"id": "VA007", "name": "Richmond West Substation", "lat": 37.5892, "lng": -77.5546, "voltage_kv": 500, "est_available_mw": 300, "utility": "Dominion Energy", "status": "available"},
+
+    {"id": "TX001", "name": "Plano Substation", "lat": 33.0198, "lng": -96.6989, "voltage_kv": 345, "est_available_mw": 150, "utility": "Oncor", "status": "limited"},
+    {"id": "TX002", "name": "Richardson Substation", "lat": 32.9483, "lng": -96.7299, "voltage_kv": 345, "est_available_mw": 200, "utility": "Oncor", "status": "available"},
+    {"id": "TX003", "name": "Garland Substation", "lat": 32.9126, "lng": -96.6389, "voltage_kv": 345, "est_available_mw": 180, "utility": "Oncor", "status": "available"},
+    {"id": "TX004", "name": "Fort Worth North Substation", "lat": 32.7732, "lng": -97.3167, "voltage_kv": 345, "est_available_mw": 220, "utility": "Oncor", "status": "available"},
+    {"id": "TX005", "name": "Austin Energy North", "lat": 30.3863, "lng": -97.7412, "voltage_kv": 345, "est_available_mw": 180, "utility": "Austin Energy", "status": "available"},
+    {"id": "TX006", "name": "San Antonio West", "lat": 29.4889, "lng": -98.6084, "voltage_kv": 345, "est_available_mw": 160, "utility": "CPS Energy", "status": "available"},
+    {"id": "TX007", "name": "Temple Substation", "lat": 31.0982, "lng": -97.3428, "voltage_kv": 345, "est_available_mw": 280, "utility": "Oncor", "status": "available"},
+
+    {"id": "CA001", "name": "Santa Clara Substation", "lat": 37.3541, "lng": -121.9552, "voltage_kv": 230, "est_available_mw": 50, "utility": "Silicon Valley Power", "status": "limited"},
+    {"id": "CA002", "name": "Newark Substation", "lat": 37.5321, "lng": -122.0405, "voltage_kv": 230, "est_available_mw": 30, "utility": "PG&E", "status": "constrained"},
+    {"id": "CA003", "name": "Tracy Substation", "lat": 37.7396, "lng": -121.4252, "voltage_kv": 500, "est_available_mw": 400, "utility": "PG&E", "status": "available"},
+
+    {"id": "AZ001", "name": "Chandler Substation", "lat": 33.3062, "lng": -111.8413, "voltage_kv": 230, "est_available_mw": 150, "utility": "SRP", "status": "available"},
+    {"id": "AZ002", "name": "Mesa Substation", "lat": 33.4152, "lng": -111.8315, "voltage_kv": 230, "est_available_mw": 180, "utility": "SRP", "status": "available"},
+    {"id": "AZ003", "name": "Goodyear Substation", "lat": 33.4353, "lng": -112.3576, "voltage_kv": 345, "est_available_mw": 250, "utility": "APS", "status": "available"},
+    {"id": "AZ004", "name": "Buckeye Substation", "lat": 33.3703, "lng": -112.5838, "voltage_kv": 500, "est_available_mw": 500, "utility": "APS", "status": "available"},
+
+    {"id": "IL001", "name": "Elk Grove Substation", "lat": 42.0039, "lng": -87.9706, "voltage_kv": 345, "est_available_mw": 120, "utility": "ComEd", "status": "limited"},
+    {"id": "IL002", "name": "Aurora Substation", "lat": 41.7606, "lng": -88.3201, "voltage_kv": 345, "est_available_mw": 220, "utility": "ComEd", "status": "available"},
+    {"id": "IL003", "name": "Bolingbrook Substation", "lat": 41.6986, "lng": -88.0684, "voltage_kv": 345, "est_available_mw": 180, "utility": "ComEd", "status": "available"},
+
+    {"id": "GA001", "name": "Lithia Springs Substation", "lat": 33.7901, "lng": -84.6524, "voltage_kv": 230, "est_available_mw": 160, "utility": "Georgia Power", "status": "available"},
+    {"id": "GA002", "name": "Douglasville Substation", "lat": 33.7515, "lng": -84.7477, "voltage_kv": 230, "est_available_mw": 200, "utility": "Georgia Power", "status": "available"},
+    {"id": "GA003", "name": "Atlanta South Substation", "lat": 33.6415, "lng": -84.4478, "voltage_kv": 500, "est_available_mw": 350, "utility": "Georgia Power", "status": "available"},
+
+    {"id": "NJ001", "name": "Secaucus Substation", "lat": 40.7895, "lng": -74.0565, "voltage_kv": 230, "est_available_mw": 40, "utility": "PSE&G", "status": "constrained"},
+    {"id": "NJ002", "name": "Piscataway Substation", "lat": 40.5549, "lng": -74.4624, "voltage_kv": 230, "est_available_mw": 100, "utility": "PSE&G", "status": "limited"},
+    {"id": "NJ003", "name": "Newark Substation", "lat": 40.7357, "lng": -74.1724, "voltage_kv": 345, "est_available_mw": 80, "utility": "PSE&G", "status": "limited"},
+
+    {"id": "OH001", "name": "New Albany Substation", "lat": 40.0812, "lng": -82.8088, "voltage_kv": 345, "est_available_mw": 250, "utility": "AEP Ohio", "status": "available"},
+    {"id": "OH002", "name": "Columbus West Substation", "lat": 39.9831, "lng": -83.0903, "voltage_kv": 345, "est_available_mw": 200, "utility": "AEP Ohio", "status": "available"},
+    {"id": "OH003", "name": "Hilliard Substation", "lat": 40.0334, "lng": -83.1588, "voltage_kv": 138, "est_available_mw": 60, "utility": "AEP Ohio", "status": "available"},
+
+    {"id": "OR001", "name": "Hillsboro Substation", "lat": 45.5229, "lng": -122.9898, "voltage_kv": 230, "est_available_mw": 180, "utility": "PGE", "status": "available"},
+    {"id": "OR002", "name": "Prineville Substation", "lat": 44.2998, "lng": -120.8344, "voltage_kv": 230, "est_available_mw": 220, "utility": "PacifiCorp", "status": "available"},
+    {"id": "OR003", "name": "The Dalles Substation", "lat": 45.5946, "lng": -121.1787, "voltage_kv": 230, "est_available_mw": 150, "utility": "NWPP", "status": "available"},
+
+    {"id": "NV001", "name": "Reno North Substation", "lat": 39.6078, "lng": -119.8538, "voltage_kv": 345, "est_available_mw": 200, "utility": "NV Energy", "status": "available"},
+    {"id": "NV002", "name": "Fernley Substation", "lat": 39.6079, "lng": -119.2521, "voltage_kv": 345, "est_available_mw": 350, "utility": "NV Energy", "status": "available"},
+    {"id": "NV003", "name": "Las Vegas North Substation", "lat": 36.2296, "lng": -115.2626, "voltage_kv": 230, "est_available_mw": 180, "utility": "NV Energy", "status": "available"},
+
+    {"id": "UT001", "name": "West Jordan Substation", "lat": 40.6097, "lng": -111.9391, "voltage_kv": 345, "est_available_mw": 200, "utility": "Rocky Mountain Power", "status": "available"},
+    {"id": "UT002", "name": "Eagle Mountain Substation", "lat": 40.3136, "lng": -112.0069, "voltage_kv": 345, "est_available_mw": 400, "utility": "Rocky Mountain Power", "status": "available"},
+
+    {"id": "MN001", "name": "Chaska Substation", "lat": 44.7891, "lng": -93.6075, "voltage_kv": 345, "est_available_mw": 180, "utility": "Xcel Energy", "status": "available"},
+    {"id": "MN002", "name": "Rosemount Substation", "lat": 44.7394, "lng": -93.1294, "voltage_kv": 345, "est_available_mw": 220, "utility": "Xcel Energy", "status": "available"},
+
+    {"id": "MO001", "name": "Kansas City Substation", "lat": 39.0997, "lng": -94.5786, "voltage_kv": 345, "est_available_mw": 180, "utility": "Evergy", "status": "available"},
+    {"id": "MO002", "name": "Olathe Substation", "lat": 38.8814, "lng": -94.8191, "voltage_kv": 230, "est_available_mw": 140, "utility": "Evergy", "status": "available"},
+
+    {"id": "TN001", "name": "Nashville North Substation", "lat": 36.2420, "lng": -86.7816, "voltage_kv": 500, "est_available_mw": 300, "utility": "TVA", "status": "available"},
+    {"id": "TN002", "name": "Murfreesboro Substation", "lat": 35.8456, "lng": -86.3903, "voltage_kv": 230, "est_available_mw": 160, "utility": "TVA", "status": "available"},
+
+    {"id": "CO001", "name": "Denver East Substation", "lat": 39.7392, "lng": -104.8419, "voltage_kv": 230, "est_available_mw": 140, "utility": "Xcel Energy CO", "status": "available"},
+    {"id": "CO002", "name": "Aurora Substation", "lat": 39.7294, "lng": -104.8319, "voltage_kv": 230, "est_available_mw": 180, "utility": "Xcel Energy CO", "status": "available"}
+  ]
+}

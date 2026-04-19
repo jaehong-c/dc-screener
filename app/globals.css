@@ -1,26 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg: #fafaf7;
+  --bg-elevated: #ffffff;
+  --bg-card: #ffffff;
+  --border: #e8e6df;
+  --border-bright: #d4d2c8;
+  --text: #0a0a0a;
+  --text-dim: #52525b;
+  --text-faint: #a1a1aa;
+  --accent: #a87a00;
+  --accent-bright: #8d6600;
+  --good: #15803d;
+  --warn: #b45309;
+  --bad: #b91c1c;
+  --serif: 'Fraunces', 'Times New Roman', serif;
+  --sans: 'Inter', system-ui, sans-serif;
+  --mono: 'JetBrains Mono', ui-monospace, monospace;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+html, body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  font-feature-settings: 'ss01', 'cv11';
+  -webkit-font-smoothing: antialiased;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(15,15,15,0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(15,15,15,0.025) 1px, transparent 1px);
+  background-size: 56px 56px;
+  pointer-events: none;
+  z-index: 0;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(ellipse 80% 50% at 50% 0%, rgba(168,122,0,0.04) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
 }
+
+main, header, footer {
+  position: relative;
+  z-index: 1;
+}
+
+.font-serif { font-family: var(--serif); }
+.font-mono { font-family: var(--mono); }
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideBar {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+@keyframes pulse-dim {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+
+.animate-fadeup { animation: fadeInUp 0.6s ease-out both; }
+.animate-bar { transform-origin: left; animation: slideBar 0.9s cubic-bezier(0.22, 1, 0.36, 1) both; }
+.animate-pulse-dim { animation: pulse-dim 1.8s ease-in-out infinite; }
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border-bright); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--text-faint); }
+
+::selection { background: var(--accent); color: white; }
+
+/* Leaflet override for light theme */
+.leaflet-container { font-family: var(--sans); }
+.leaflet-popup-content-wrapper {
+  background: white;
+  color: var(--text);
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+.leaflet-popup-tip { background: white; }

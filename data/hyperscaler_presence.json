@@ -1,0 +1,156 @@
+{
+  "description": "Hyperscaler and major tenant presence by data center market. Strong existing footprint indicates validated market, ecosystem support (cross-connects, labor, supply chain), and precedent for future expansion. Based on publicly announced and operational facilities as of early 2026.",
+  "metrics_explained": {
+    "hyperscaler_count": "Number of hyperscaler operators with active DC presence (AWS, Google, Microsoft, Meta, Oracle, Apple).",
+    "hyperscalers_present": "List of hyperscalers with known operational or under-construction presence.",
+    "major_colo_operators": "Major colocation operators with facilities in the market.",
+    "cloud_on_ramps_available": "Number of distinct cloud on-ramp providers (AWS Direct Connect, Azure ExpressRoute, Google Cloud Interconnect).",
+    "hyperscaler_tenant_depth_score": "Overall tenant ecosystem strength. 1=strong (deep, multi-hyperscaler), 5=thin (limited operators)."
+  },
+  "markets": {
+    "Northern Virginia": {
+      "hyperscaler_count": 6,
+      "hyperscalers_present": ["AWS", "Microsoft", "Google", "Meta", "Oracle", "Apple"],
+      "major_colo_operators": ["Equinix", "Digital Realty", "CoreSite", "QTS", "Cyrusone", "Iron Mountain", "Aligned", "STACK"],
+      "cloud_on_ramps_available": 8,
+      "hyperscaler_tenant_depth_score": 1,
+      "notes": "Deepest ecosystem globally. Every major hyperscaler and colo present."
+    },
+    "Dallas-Fort Worth": {
+      "hyperscaler_count": 5,
+      "hyperscalers_present": ["AWS", "Microsoft", "Google", "Meta", "Oracle"],
+      "major_colo_operators": ["Equinix", "Digital Realty", "CyrusOne", "QTS", "Flexential", "DataBank"],
+      "cloud_on_ramps_available": 7,
+      "hyperscaler_tenant_depth_score": 1,
+      "notes": "Strong second-tier ecosystem. All major hyperscalers except Apple have significant Dallas presence."
+    },
+    "Silicon Valley": {
+      "hyperscaler_count": 6,
+      "hyperscalers_present": ["AWS", "Microsoft", "Google", "Meta", "Oracle", "Apple"],
+      "major_colo_operators": ["Equinix", "Digital Realty", "CoreSite", "STACK"],
+      "cloud_on_ramps_available": 8,
+      "hyperscaler_tenant_depth_score": 1,
+      "notes": "HQ presence for most hyperscalers. Strong but capacity-constrained."
+    },
+    "Phoenix": {
+      "hyperscaler_count": 5,
+      "hyperscalers_present": ["AWS", "Microsoft", "Google", "Meta", "Apple"],
+      "major_colo_operators": ["Digital Realty", "Iron Mountain", "CyrusOne", "Aligned", "H5"],
+      "cloud_on_ramps_available": 5,
+      "hyperscaler_tenant_depth_score": 2,
+      "notes": "Growing quickly. Apple iCloud anchor in Mesa. AWS and Microsoft major investments."
+    },
+    "Chicago": {
+      "hyperscaler_count": 5,
+      "hyperscalers_present": ["AWS", "Microsoft", "Google", "Meta", "Oracle"],
+      "major_colo_operators": ["Equinix", "Digital Realty", "CyrusOne", "QTS", "CoreSite"],
+      "cloud_on_ramps_available": 6,
+      "hyperscaler_tenant_depth_score": 2,
+      "notes": "Mature market with strong enterprise tenant depth."
+    },
+    "Atlanta": {
+      "hyperscaler_count": 4,
+      "hyperscalers_present": ["AWS", "Microsoft", "Google", "Meta"],
+      "major_colo_operators": ["Equinix", "Digital Realty", "QTS", "DataBank", "Switch"],
+      "cloud_on_ramps_available": 5,
+      "hyperscaler_tenant_depth_score": 2,
+      "notes": "Expanding rapidly. Meta and Google recent expansions."
+    },
+    "New York/New Jersey": {
+      "hyperscaler_count": 4,
+      "hyperscalers_present": ["AWS", "Microsoft", "Google", "Oracle"],
+      "major_colo_operators": ["Equinix", "Digital Realty", "CoreSite", "Sabey"],
+      "cloud_on_ramps_available": 6,
+      "hyperscaler_tenant_depth_score": 2,
+      "notes": "Financial services tenant depth. Limited greenfield hyperscaler growth."
+    },
+    "Columbus": {
+      "hyperscaler_count": 4,
+      "hyperscalers_present": ["AWS", "Microsoft", "Google", "Meta"],
+      "major_colo_operators": ["Cologix", "Expedient", "Aligned"],
+      "cloud_on_ramps_available": 4,
+      "hyperscaler_tenant_depth_score": 2,
+      "notes": "Fastest-growing hyperscaler cluster. Intel investment magnifies ecosystem."
+    },
+    "Hillsboro-Portland": {
+      "hyperscaler_count": 4,
+      "hyperscalers_present": ["AWS", "Microsoft", "Google", "Meta"],
+      "major_colo_operators": ["Flexential", "Pittock Building"],
+      "cloud_on_ramps_available": 4,
+      "hyperscaler_tenant_depth_score": 3,
+      "notes": "Prineville is Meta/Apple anchor. The Dalles is Google. Hillsboro serves hyperscalers."
+    },
+    "Reno-Sparks": {
+      "hyperscaler_count": 3,
+      "hyperscalers_present": ["Apple", "Google", "Microsoft"],
+      "major_colo_operators": ["Switch"],
+      "cloud_on_ramps_available": 2,
+      "hyperscaler_tenant_depth_score": 3,
+      "notes": "Apple Project McQueen anchor. Switch's SUPERNAP is major colo."
+    },
+    "Salt Lake City": {
+      "hyperscaler_count": 3,
+      "hyperscalers_present": ["Meta", "Microsoft", "Oracle"],
+      "major_colo_operators": ["Aligned", "C7 Data Centers"],
+      "cloud_on_ramps_available": 3,
+      "hyperscaler_tenant_depth_score": 3,
+      "notes": "Meta Eagle Mountain campus. Growing Microsoft presence."
+    },
+    "Minneapolis-St. Paul": {
+      "hyperscaler_count": 2,
+      "hyperscalers_present": ["Meta", "Microsoft"],
+      "major_colo_operators": ["Cologix", "DataBank", "Flexential"],
+      "cloud_on_ramps_available": 3,
+      "hyperscaler_tenant_depth_score": 3,
+      "notes": "Meta Rosemount campus. Emerging market."
+    },
+    "Austin-San Antonio": {
+      "hyperscaler_count": 3,
+      "hyperscalers_present": ["Microsoft", "Google", "Meta"],
+      "major_colo_operators": ["Digital Realty", "DataBank"],
+      "cloud_on_ramps_available": 3,
+      "hyperscaler_tenant_depth_score": 3,
+      "notes": "Microsoft San Antonio campus. Growing AI-focused facilities."
+    },
+    "Kansas City": {
+      "hyperscaler_count": 2,
+      "hyperscalers_present": ["Meta", "Google"],
+      "major_colo_operators": ["QTS", "Digital Realty"],
+      "cloud_on_ramps_available": 2,
+      "hyperscaler_tenant_depth_score": 4,
+      "notes": "Meta Kansas City campus anchor. Limited but growing."
+    },
+    "Nashville": {
+      "hyperscaler_count": 2,
+      "hyperscalers_present": ["AWS", "Oracle"],
+      "major_colo_operators": ["Flexential", "Digital Realty"],
+      "cloud_on_ramps_available": 3,
+      "hyperscaler_tenant_depth_score": 3,
+      "notes": "Oracle Nashville HQ. Expanding market."
+    },
+    "Denver": {
+      "hyperscaler_count": 2,
+      "hyperscalers_present": ["Microsoft", "Google"],
+      "major_colo_operators": ["CoreSite", "Flexential"],
+      "cloud_on_ramps_available": 3,
+      "hyperscaler_tenant_depth_score": 3,
+      "notes": "Strong colo presence, limited hyperscaler depth."
+    },
+    "Richmond": {
+      "hyperscaler_count": 3,
+      "hyperscalers_present": ["Meta", "Microsoft", "QTS"],
+      "major_colo_operators": ["QTS", "Digital Realty"],
+      "cloud_on_ramps_available": 3,
+      "hyperscaler_tenant_depth_score": 3,
+      "notes": "Meta Henrico campus. Growing as NoVA overflow."
+    }
+  },
+  "default_for_non_market": {
+    "hyperscaler_count": 0,
+    "hyperscalers_present": [],
+    "major_colo_operators": [],
+    "cloud_on_ramps_available": 0,
+    "hyperscaler_tenant_depth_score": 5,
+    "notes": "Non-DC market with limited operator presence. Ecosystem support limited."
+  }
+}

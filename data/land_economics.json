@@ -1,0 +1,156 @@
+{
+  "description": "Land economics and development timelines for data center sites by market. Values reflect realistic market ranges as of 2024-2025. Actual pricing varies by specific site characteristics, power availability, and deal structure. Use for screening only.",
+  "metrics_explained": {
+    "avg_land_price_per_acre_usd": "Average price per acre for industrial or data center-suitable land. Millions of USD.",
+    "available_parcel_sizes": "Typical range of parcel sizes available for DC development.",
+    "entitlement_months": "Typical entitlement and permitting timeline from application to shovel-ready (months).",
+    "greenfield_availability": "Availability of undeveloped sites. 1=abundant, 5=very limited.",
+    "brownfield_opportunities": "Availability of conversion opportunities (retail, warehouse, legacy office). 1=abundant, 5=limited."
+  },
+  "markets": {
+    "Northern Virginia": {
+      "avg_land_price_per_acre_usd": 5.0,
+      "available_parcel_sizes": "5-50 acres",
+      "entitlement_months": 12,
+      "greenfield_availability": 4,
+      "brownfield_opportunities": 2,
+      "notes": "Land prices $3M-$8M/acre depending on power status. Greenfield increasingly scarce; moratorium risk in Loudoun."
+    },
+    "Dallas-Fort Worth": {
+      "avg_land_price_per_acre_usd": 0.7,
+      "available_parcel_sizes": "10-200 acres",
+      "entitlement_months": 6,
+      "greenfield_availability": 2,
+      "brownfield_opportunities": 3,
+      "notes": "Texas offers abundant industrial land with favorable entitlement processes."
+    },
+    "Silicon Valley": {
+      "avg_land_price_per_acre_usd": 8.5,
+      "available_parcel_sizes": "2-15 acres",
+      "entitlement_months": 24,
+      "greenfield_availability": 5,
+      "brownfield_opportunities": 3,
+      "notes": "Extremely constrained. Most new DC builds require brownfield redevelopment."
+    },
+    "Phoenix": {
+      "avg_land_price_per_acre_usd": 0.8,
+      "available_parcel_sizes": "10-300 acres",
+      "entitlement_months": 8,
+      "greenfield_availability": 2,
+      "brownfield_opportunities": 3,
+      "notes": "Abundant greenfield in West Valley (Goodyear, Buckeye). Chandler tightening."
+    },
+    "Chicago": {
+      "avg_land_price_per_acre_usd": 0.6,
+      "available_parcel_sizes": "5-80 acres",
+      "entitlement_months": 10,
+      "greenfield_availability": 3,
+      "brownfield_opportunities": 2,
+      "notes": "Suburbs offer greenfield; Elk Grove built out."
+    },
+    "Atlanta": {
+      "avg_land_price_per_acre_usd": 0.4,
+      "available_parcel_sizes": "10-150 acres",
+      "entitlement_months": 6,
+      "greenfield_availability": 2,
+      "brownfield_opportunities": 3,
+      "notes": "Douglas County and Douglasville offer abundant affordable land."
+    },
+    "New York/New Jersey": {
+      "avg_land_price_per_acre_usd": 3.5,
+      "available_parcel_sizes": "2-20 acres",
+      "entitlement_months": 18,
+      "greenfield_availability": 5,
+      "brownfield_opportunities": 2,
+      "notes": "Land scarcity; brownfield conversions dominate."
+    },
+    "Columbus": {
+      "avg_land_price_per_acre_usd": 0.3,
+      "available_parcel_sizes": "20-400 acres",
+      "entitlement_months": 5,
+      "greenfield_availability": 1,
+      "brownfield_opportunities": 3,
+      "notes": "New Albany offers 2000+ acre industrial assemblage."
+    },
+    "Hillsboro-Portland": {
+      "avg_land_price_per_acre_usd": 0.5,
+      "available_parcel_sizes": "10-80 acres",
+      "entitlement_months": 9,
+      "greenfield_availability": 3,
+      "brownfield_opportunities": 3,
+      "notes": "Enterprise Zones offer entitlement advantages. UGB constraints limit greenfield."
+    },
+    "Reno-Sparks": {
+      "avg_land_price_per_acre_usd": 0.25,
+      "available_parcel_sizes": "20-500 acres",
+      "entitlement_months": 6,
+      "greenfield_availability": 1,
+      "brownfield_opportunities": 4,
+      "notes": "Tahoe-Reno Industrial Center offers massive assemblages."
+    },
+    "Salt Lake City": {
+      "avg_land_price_per_acre_usd": 0.5,
+      "available_parcel_sizes": "10-100 acres",
+      "entitlement_months": 7,
+      "greenfield_availability": 2,
+      "brownfield_opportunities": 3,
+      "notes": "Eagle Mountain emerging as DC cluster."
+    },
+    "Minneapolis-St. Paul": {
+      "avg_land_price_per_acre_usd": 0.35,
+      "available_parcel_sizes": "10-80 acres",
+      "entitlement_months": 8,
+      "greenfield_availability": 2,
+      "brownfield_opportunities": 3,
+      "notes": "Southern metro (Chaska, Rosemount) offers land."
+    },
+    "Austin-San Antonio": {
+      "avg_land_price_per_acre_usd": 0.6,
+      "available_parcel_sizes": "10-150 acres",
+      "entitlement_months": 7,
+      "greenfield_availability": 2,
+      "brownfield_opportunities": 3,
+      "notes": "Growing competition from chip fabs and semiconductors."
+    },
+    "Kansas City": {
+      "avg_land_price_per_acre_usd": 0.2,
+      "available_parcel_sizes": "10-200 acres",
+      "entitlement_months": 5,
+      "greenfield_availability": 1,
+      "brownfield_opportunities": 3,
+      "notes": "KC Industrial District offers affordable greenfield."
+    },
+    "Nashville": {
+      "avg_land_price_per_acre_usd": 0.4,
+      "available_parcel_sizes": "10-100 acres",
+      "entitlement_months": 6,
+      "greenfield_availability": 2,
+      "brownfield_opportunities": 3,
+      "notes": "Growing DC activity. Rutherford and Williamson counties active."
+    },
+    "Denver": {
+      "avg_land_price_per_acre_usd": 0.7,
+      "available_parcel_sizes": "5-60 acres",
+      "entitlement_months": 9,
+      "greenfield_availability": 3,
+      "brownfield_opportunities": 3,
+      "notes": "Front Range limited; Aurora and Commerce City primary."
+    },
+    "Richmond": {
+      "avg_land_price_per_acre_usd": 0.8,
+      "available_parcel_sizes": "10-100 acres",
+      "entitlement_months": 7,
+      "greenfield_availability": 2,
+      "brownfield_opportunities": 3,
+      "notes": "Overflow demand from NoVA. Dominion Energy service area."
+    }
+  },
+  "default_for_non_market": {
+    "avg_land_price_per_acre_usd": 0.15,
+    "available_parcel_sizes": "variable",
+    "entitlement_months": 8,
+    "greenfield_availability": 2,
+    "brownfield_opportunities": 3,
+    "notes": "Non-DC market; land economics depend on local conditions."
+  }
+}

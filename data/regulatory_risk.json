@@ -1,0 +1,176 @@
+{
+  "description": "Regulatory and permitting risk factors affecting data center development. Critical in 2024-2026 as multiple jurisdictions have implemented moratoriums or heightened scrutiny. Data reflects publicly reported policy actions through early 2026.",
+  "metrics_explained": {
+    "entitlement_risk_score": "Overall difficulty of securing entitlements. 1=straightforward, 5=hostile.",
+    "active_moratorium": "Whether the jurisdiction has an active DC moratorium or building pause.",
+    "moratorium_risk": "Likelihood of future moratorium based on community opposition patterns. 1=low, 5=imminent.",
+    "noise_ordinance_strict": "Whether local noise regulations pose constraints on generators/cooling equipment.",
+    "community_opposition_level": "Public pushback against DC development. 1=supportive, 5=hostile.",
+    "nimby_precedent": "History of rejected or delayed DC applications in the jurisdiction."
+  },
+  "markets": {
+    "Northern Virginia": {
+      "entitlement_risk_score": 4,
+      "active_moratorium": false,
+      "moratorium_risk": 4,
+      "noise_ordinance_strict": true,
+      "community_opposition_level": 4,
+      "nimby_precedent": true,
+      "notes": "Prince William County rejected PW Digital Gateway expansions in 2024. Loudoun increased setback requirements. Growing community pushback, though no formal moratorium yet."
+    },
+    "Dallas-Fort Worth": {
+      "entitlement_risk_score": 2,
+      "active_moratorium": false,
+      "moratorium_risk": 1,
+      "noise_ordinance_strict": false,
+      "community_opposition_level": 2,
+      "nimby_precedent": false,
+      "notes": "Texas is broadly supportive. Some suburban pushback but state-level policy remains favorable."
+    },
+    "Silicon Valley": {
+      "entitlement_risk_score": 4,
+      "active_moratorium": false,
+      "moratorium_risk": 3,
+      "noise_ordinance_strict": true,
+      "community_opposition_level": 3,
+      "nimby_precedent": true,
+      "notes": "CEQA environmental review adds significant time. Santa Clara has capacity planning restrictions."
+    },
+    "Phoenix": {
+      "entitlement_risk_score": 3,
+      "active_moratorium": false,
+      "moratorium_risk": 3,
+      "noise_ordinance_strict": false,
+      "community_opposition_level": 3,
+      "nimby_precedent": false,
+      "notes": "Chandler tightening water use approvals. West Valley remains supportive."
+    },
+    "Chicago": {
+      "entitlement_risk_score": 2,
+      "active_moratorium": false,
+      "moratorium_risk": 2,
+      "noise_ordinance_strict": true,
+      "community_opposition_level": 2,
+      "nimby_precedent": false,
+      "notes": "Elk Grove Village has well-defined DC overlay. Suburban markets straightforward."
+    },
+    "Atlanta": {
+      "entitlement_risk_score": 2,
+      "active_moratorium": false,
+      "moratorium_risk": 2,
+      "noise_ordinance_strict": false,
+      "community_opposition_level": 2,
+      "nimby_precedent": false,
+      "notes": "Douglas County and state government supportive. Limited community opposition to date."
+    },
+    "New York/New Jersey": {
+      "entitlement_risk_score": 4,
+      "active_moratorium": false,
+      "moratorium_risk": 3,
+      "noise_ordinance_strict": true,
+      "community_opposition_level": 3,
+      "nimby_precedent": true,
+      "notes": "Dense urban environment creates friction. NYC has complex land use process."
+    },
+    "Columbus": {
+      "entitlement_risk_score": 1,
+      "active_moratorium": false,
+      "moratorium_risk": 1,
+      "noise_ordinance_strict": false,
+      "community_opposition_level": 2,
+      "nimby_precedent": false,
+      "notes": "New Albany has DC-supportive zoning. State and county actively courting investment."
+    },
+    "Hillsboro-Portland": {
+      "entitlement_risk_score": 3,
+      "active_moratorium": false,
+      "moratorium_risk": 2,
+      "noise_ordinance_strict": true,
+      "community_opposition_level": 3,
+      "nimby_precedent": false,
+      "notes": "Oregon UGB and land use planning adds complexity. Prineville remote but supportive."
+    },
+    "Reno-Sparks": {
+      "entitlement_risk_score": 1,
+      "active_moratorium": false,
+      "moratorium_risk": 1,
+      "noise_ordinance_strict": false,
+      "community_opposition_level": 1,
+      "nimby_precedent": false,
+      "notes": "TRIC (Tahoe-Reno Industrial Center) has entitlements in place. Nevada state welcoming."
+    },
+    "Salt Lake City": {
+      "entitlement_risk_score": 2,
+      "active_moratorium": false,
+      "moratorium_risk": 2,
+      "noise_ordinance_strict": false,
+      "community_opposition_level": 2,
+      "nimby_precedent": false,
+      "notes": "Eagle Mountain has DC-ready zoning. Utah generally supportive."
+    },
+    "Minneapolis-St. Paul": {
+      "entitlement_risk_score": 2,
+      "active_moratorium": false,
+      "moratorium_risk": 2,
+      "noise_ordinance_strict": true,
+      "community_opposition_level": 2,
+      "nimby_precedent": false,
+      "notes": "Generally smooth; suburban markets have DC overlays."
+    },
+    "Austin-San Antonio": {
+      "entitlement_risk_score": 2,
+      "active_moratorium": false,
+      "moratorium_risk": 2,
+      "noise_ordinance_strict": false,
+      "community_opposition_level": 3,
+      "nimby_precedent": false,
+      "notes": "Austin environmental considerations. San Antonio more straightforward."
+    },
+    "Kansas City": {
+      "entitlement_risk_score": 1,
+      "active_moratorium": false,
+      "moratorium_risk": 1,
+      "noise_ordinance_strict": false,
+      "community_opposition_level": 1,
+      "nimby_precedent": false,
+      "notes": "Historically welcoming. KC Industrial District has DC overlay."
+    },
+    "Nashville": {
+      "entitlement_risk_score": 2,
+      "active_moratorium": false,
+      "moratorium_risk": 2,
+      "noise_ordinance_strict": false,
+      "community_opposition_level": 2,
+      "nimby_precedent": false,
+      "notes": "Growing acceptance. Rutherford and Williamson counties favorable."
+    },
+    "Denver": {
+      "entitlement_risk_score": 3,
+      "active_moratorium": false,
+      "moratorium_risk": 3,
+      "noise_ordinance_strict": true,
+      "community_opposition_level": 3,
+      "nimby_precedent": false,
+      "notes": "Denver metro environmental scrutiny growing. Aurora more straightforward."
+    },
+    "Richmond": {
+      "entitlement_risk_score": 2,
+      "active_moratorium": false,
+      "moratorium_risk": 3,
+      "noise_ordinance_strict": true,
+      "community_opposition_level": 2,
+      "nimby_precedent": false,
+      "notes": "Follows NoVA precedent but less intense community opposition to date."
+    }
+  },
+  "default_for_non_market": {
+    "entitlement_risk_score": 3,
+    "active_moratorium": false,
+    "moratorium_risk": 3,
+    "noise_ordinance_strict": false,
+    "community_opposition_level": 3,
+    "nimby_precedent": false,
+    "notes": "Non-DC market. Limited precedent; outcomes depend on local political context."
+  },
+  "national_trends": "Community opposition to data centers has grown significantly through 2024-2025. Grid strain, water use, and neighborhood compatibility are primary concerns. Several jurisdictions have imposed pauses on new DC approvals pending utility and planning studies."
+}
