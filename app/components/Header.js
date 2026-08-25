@@ -9,7 +9,7 @@ const NAV = [
 ];
 
 const TOOLS = [
-  { href: 'https://dc-lease.vercel.app', label: 'Lease' },
+  { href: 'https://dc-lease.vercel.app', label: 'Lease Comparator' },
   { href: 'https://dc-risk.vercel.app', label: 'Risk Register' },
 ];
 
