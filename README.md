@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# DC Site Screener
 
-## Getting Started
+First-pass siting assessment for US data center sites, with an AI-written investment memo.
 
-First, run the development server:
+**Live:** https://dc-screener.vercel.app
+**Related tools:** [DC Lease Comparator](https://dc-lease.vercel.app) · [DC Risk Register](https://dc-risk.vercel.app)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## What it does
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Enter any US address. The engine geocodes it, finds the nearest data center market, scores eleven siting axes against curated data layers, maps the site against nearby substations and fiber, and writes an institutional investment memo.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## How scoring works
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Geocoding via OpenStreetMap Nominatim (no API key).
+- Eleven axes, each scored 0 to 100 by deterministic rules: substation proximity, power cost, climate and hazard exposure, fiber access, hyperscaler presence, labor and operations depth, land economics, regulatory risk, sustainability signals, tax incentives, market maturity.
+- Fixed weights combine the axes into a composite. Weights live in `lib/scoring.js`.
+- The AI does not score. It reads the axis results and writes the memo, including what would change the view.
 
-## Learn More
+## Data and limitations
 
-To learn more about Next.js, take a look at the following resources:
+All layers in `data/` are static JSON curated by the author from public sources for a prototype. Substation and fiber positions are approximate; power costs and incentives are state or market level. This does not replace a utility interconnection study, environmental assessment, or title review.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Roadmap
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Parcel-level power data where utilities publish hosting capacity maps
+- County-level hazard scores from the FEMA National Risk Index
+- Handoff into DC Risk Register as a lifecycle risk profile
+- PDF export of memo and axis chart
 
-## Deploy on Vercel
+## Stack
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Next.js (App Router, JavaScript) · static JSON data layer · deterministic scoring in plain JS · Leaflet · Anthropic API behind a server route · Vercel
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Run locally
