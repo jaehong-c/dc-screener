@@ -1,0 +1,6 @@
+{
+    "redirects": [
+      { "source": "/about", "destination": "https://dc-suite.vercel.app/site/about", "permanent": false },
+      { "source": "/(.*)", "destination": "https://dc-suite.vercel.app/site", "permanent": false }
+    ]
+  }
