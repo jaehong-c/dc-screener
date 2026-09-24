@@ -1,7 +1,47 @@
 @import "tailwindcss";
 
+/* ---------- MASTER.md tokens (DC Tools, light mode only) ---------- */
+@theme {
+  --color-primary: #0f172a;
+  --color-on-primary: #ffffff;
+  --color-secondary: #334155;
+  --color-on-secondary: #ffffff;
+  --color-accent: #0369a1;
+  --color-on-accent: #ffffff;
+  --color-background: #f8fafc;
+  --color-foreground: #020617;
+  --color-card: #ffffff;
+  --color-card-foreground: #020617;
+  --color-muted: #e8ecf1;
+  --color-muted-foreground: #475569;
+  --color-border: #e2e8f0;
+  --color-destructive: #dc2626;
+  --color-on-destructive: #ffffff;
+  --color-ring: #0f172a;
+
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  --spacing-3xl: 4rem;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.15);
+}
+
 /* ---------- Design tokens, shared with DC Lease Comparator ---------- */
 :root {
+  --space-xs: var(--spacing-xs);
+  --space-sm: var(--spacing-sm);
+  --space-md: var(--spacing-md);
+  --space-lg: var(--spacing-lg);
+  --space-xl: var(--spacing-xl);
+  --space-2xl: var(--spacing-2xl);
+  --space-3xl: var(--spacing-3xl);
   --bg: #fafafa;
   --surface: #ffffff;
   --fill: #f3f3f3;
@@ -48,20 +88,19 @@
   --good: var(--tier-1);
   --warn: var(--tier-2);
   --bad: var(--tier-3);
-  --serif: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
-  --sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
-  --mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, Menlo, monospace;
+  --serif: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 }
 
 @theme inline {
-  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
-  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, Menlo, monospace;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 
   --color-bg: var(--bg);
   --color-surface: var(--surface);
   --color-fill: var(--fill);
   --color-fill-2: var(--fill-2);
-  --color-border: var(--border);
   --color-border-strong: var(--border-strong);
   --color-ink: var(--ink);
   --color-ink-2: var(--ink-2);
@@ -74,12 +113,12 @@
 
 /* ---------- Base ---------- */
 html {
-  background: var(--bg);
+  background: var(--color-background);
 }
 
 body {
-  background: var(--bg);
-  color: var(--ink);
+  background: var(--color-background);
+  color: var(--color-foreground);
   font-family: var(--font-sans);
   font-size: 14px;
   line-height: 1.5;
