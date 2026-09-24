@@ -38,6 +38,26 @@
 
 **Color Notes:** Professional navy + blue CTA
 
+### Semantic & Gray Ramp Extensions
+
+Shared by dc-screener, dc-lease, and dc-risk. Use these for text hierarchy, fills, borders, bar scales, and score semantics. Values are Tailwind slate / emerald / amber / red.
+
+| Role | Hex | CSS Variable |
+|------|-----|--------------|
+| Success | `#047857` | `--color-success` |
+| Warning | `#B45309` | `--color-warning` |
+| Slate 100 | `#F1F5F9` | `--color-slate-100` |
+| Slate 200 | `#E2E8F0` | `--color-slate-200` |
+| Slate 300 | `#CBD5E1` | `--color-slate-300` |
+| Slate 400 | `#94A3B8` | `--color-slate-400` |
+| Slate 500 | `#64748B` | `--color-slate-500` |
+| Slate 600 | `#475569` | `--color-slate-600` |
+| Slate 700 | `#334155` | `--color-slate-700` |
+| Slate 800 | `#1E293B` | `--color-slate-800` |
+| Slate 900 | `#0F172A` | `--color-slate-900` |
+
+**Score / hierarchy usage:** `--ink` → slate-900 · `--ink-2` → slate-600 · `--ink-3` → slate-500 · `--ink-4` → slate-400 · `--fill` → slate-100 · `--fill-2` / `--border` → slate-200 · `--border-strong` / `--bar-1` → slate-300 · `--bar-2` → slate-400 · `--bar-3` → slate-500 · `--bar-4` → slate-700 · `--bar-5` → slate-900 · `--tier-1` → success `#047857` on `#ECFDF5` · `--tier-2` → warning `#B45309` on `#FFFBEB` · `--tier-3` → `#B91C1C` on `#FEF2F2`
+
 ### Typography
 
 - **Heading Font:** Inter
@@ -63,6 +83,8 @@
 | `--space-xl` | `32px` / `2rem` | Large gaps |
 | `--space-2xl` | `48px` / `3rem` | Section margins |
 | `--space-3xl` | `64px` / `4rem` | Hero padding |
+
+Tailwind v4: never define `--spacing-*` in `@theme`; use `--space-*` in `:root`.
 
 ### Shadow Depths
 

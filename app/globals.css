@@ -17,15 +17,19 @@
   --color-border: #e2e8f0;
   --color-destructive: #dc2626;
   --color-on-destructive: #ffffff;
+  --color-success: #047857;
+  --color-warning: #b45309;
   --color-ring: #0f172a;
 
-  --spacing-xs: 0.25rem;
-  --spacing-sm: 0.5rem;
-  --spacing-md: 1rem;
-  --spacing-lg: 1.5rem;
-  --spacing-xl: 2rem;
-  --spacing-2xl: 3rem;
-  --spacing-3xl: 4rem;
+  --color-slate-100: #f1f5f9;
+  --color-slate-200: #e2e8f0;
+  --color-slate-300: #cbd5e1;
+  --color-slate-400: #94a3b8;
+  --color-slate-500: #64748b;
+  --color-slate-600: #475569;
+  --color-slate-700: #334155;
+  --color-slate-800: #1e293b;
+  --color-slate-900: #0f172a;
 
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
   --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -35,39 +39,38 @@
 
 /* ---------- Design tokens, shared with DC Lease Comparator ---------- */
 :root {
-  --space-xs: var(--spacing-xs);
-  --space-sm: var(--spacing-sm);
-  --space-md: var(--spacing-md);
-  --space-lg: var(--spacing-lg);
-  --space-xl: var(--spacing-xl);
-  --space-2xl: var(--spacing-2xl);
-  --space-3xl: var(--spacing-3xl);
-  --bg: #fafafa;
-  --surface: #ffffff;
-  --fill: #f3f3f3;
-  --fill-2: #e9e9e9;
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  --bg: var(--color-background);
+  --surface: var(--color-card);
+  --fill: var(--color-slate-100);
+  --fill-2: var(--color-slate-200);
 
-  --border: #e6e6e6;
-  --border-strong: #cfcfcf;
+  --border: var(--color-slate-200);
+  --border-strong: var(--color-slate-300);
 
-  --ink: #0a0a0a;
-  --ink-2: #4b4b4b;
-  --ink-3: #8a8a8a;
-  --ink-4: #b8b8b8;
+  --ink: var(--color-slate-900);
+  --ink-2: var(--color-slate-600);
+  --ink-3: var(--color-slate-500);
+  --ink-4: var(--color-slate-400);
 
-  --bar-1: #d4d4d4;
-  --bar-2: #a6a6a6;
-  --bar-3: #6f6f6f;
-  --bar-4: #404040;
-  --bar-5: #171717;
+  --bar-1: var(--color-slate-300);
+  --bar-2: var(--color-slate-400);
+  --bar-3: var(--color-slate-500);
+  --bar-4: var(--color-slate-700);
+  --bar-5: var(--color-slate-900);
 
-  /* the only color in the app: score tier */
-  --tier-1: #1f7a4d;
-  --tier-1-bg: #e7f4ed;
-  --tier-2: #b17a1c;
-  --tier-2-bg: #fbf1dc;
-  --tier-3: #b0402e;
-  --tier-3-bg: #f9e6e2;
+  --tier-1: var(--color-success);
+  --tier-1-bg: #ecfdf5;
+  --tier-2: var(--color-warning);
+  --tier-2-bg: #fffbeb;
+  --tier-3: #b91c1c;
+  --tier-3-bg: #fef2f2;
 
   --radius-card: 16px;
   --radius-field: 10px;
@@ -83,8 +86,8 @@
   --text: var(--ink);
   --text-dim: var(--ink-2);
   --text-faint: var(--ink-3);
-  --accent: var(--ink);
-  --accent-bright: var(--ink-2);
+  --accent: var(--color-accent);
+  --accent-bright: var(--color-primary);
   --good: var(--tier-1);
   --warn: var(--tier-2);
   --bad: var(--tier-3);
